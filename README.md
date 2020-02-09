@@ -1,2 +1,31 @@
-# product-manage-site-service-for-hands-on_war
-War file of Product Manage Site Service for hands on.
+# この WAR ファイルについて
+
+この WAR ファイルは Spring Boot（Java）で作成しました。  
+起動には JDK8 以上のインストールが必要です。
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+# 起動までの準備
+
+1. こちらのリポジトリをクローンします。
+1. プロパティファイル（application.properties）の内容をエディターで確認、必要があれば変更してください。
+
+- Windows ユーザは上段（5 ～ 7 行目）、Mac ユーザーは下段（9 ～ 11 行目）です。
+- Windows ユーザーはそのまま、Mac ユーザーは上段をコメントアウト(先頭に「## 」を追加)、下段はコメントを逆に削除してください。
+- 中身ですが商品の写真データを格納する場所のパスが書かれています、使用環境に合わせて変更してください。
+- プロパティに書かれているフォルダーは起動後に自動で作られます。事前に特定のフォルダーを作っておくなどの必要はありません。
+
+# 起動方法
+
+- コマンドプロンプトにて下記コマンドを実行します。  
+   java -Xmx1024m -jar ProductManageService-1.0.0.war
+
+# 終了方法
+
+- 起動時のコマンドプロンプトにて「Ctrl」+ 「C」キーを押してください。
+
+# その他
+
+- 起動方法のコマンドと同一ですが、起動用の bat ファイルもあります。
+
+* ※-Xmx1024m：メモリーはいったん 1GB 程度を割り当てました。  
+  多すぎる場合などは調整してください。
